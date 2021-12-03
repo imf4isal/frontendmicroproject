@@ -2,3 +2,92 @@
   margin: 0;
   padding: 0;
 }
+
+:root {
+  --body-background: hsl(217, 54%, 11%);
+  --card-background: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+  --White: hsl(0, 12%, 97%);
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+}
+body {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: var(--Soft-blue);
+  background-color: var(--body-background);
+  font-family: tahoma;
+
+  letter-spacing: 1px;
+}
+
+.nft-card {
+  background-color: var(--card-background);
+  /* border: 1px solid black; */
+  width: 300px;
+  margin: 60px 60px 60px 60px;
+  padding: 30px;
+  text-align: left;
+  border-radius: 20px;
+}
+.nft-card__image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.nft-card__details {
+  margin: 10px 0;
+}
+.nft-card__details h3 {
+  margin: 20px 0;
+  color: var(--White);
+}
+.nft-card__details .intro {
+  line-height: 1.5;
+  letter-spacing: 0.7px;
+  margin-bottom: 20px;
+}
+.nft-card__buying-detail {
+  display: flex;
+  justify-content: space-between;
+}
+.nft-card__price {
+  display: flex;
+  color: var(--Cyan);
+  font-weight: 500;
+}
+.nft-card__daysleft {
+  display: flex;
+}
+
+.nft-card__buying-detail .icon {
+  margin-right: 10px;
+}
+
+.nft-card__creator {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+hr {
+  margin: 20px 0;
+  border-bottom: transparent;
+  border-left: transparent;
+  border-right: transparent;
+
+  border-top: 1px solid var(--line);
+}
+.nft-card__creator img {
+  width: 35px;
+  height: auto;
+  margin-right: 20px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.nft-card__creator .name {
+  color: white;
+}
