@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: tahoma;
+  letter-spacing: 1px;
+}
+
+.order-card-container {
+  width: 350px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 3px 3px 5px rgb(114, 114, 114);
+}
+argin-bottom: 20px;
+
+.hero img {
+  width: 100%;
+}
+.order-card__summary {
+  text-align: center;
+  font-size: 13px;
+  padding: 30px;
+}
+
+.order-card__summary h4 {
+  font-size: 18px;
+  color: rgb(38, 37, 61);
+  margin-bottom: 16px;
+}
+.order-card__summary .text {
+  line-height: 1.5;
+  color: rgb(38, 39, 58);
+  margin-bottom: 30px;
+  padding: 0 10px;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.first {
+  display: flex;
+  align-items: center;
+  line-height: 1.5;
+}
+.first .icon img {
+  width: 60%;
+  margin-right: 10px;
+}
+.first .pricetext {
+  color: black;
+  font-weight: bold;
+}
+.peryear {
+  color: rgb(38, 37, 61);
+  margin-bottom: 10px;
+}
+
+.second {
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: rgb(25, 25, 143);
+}
+
+.proceed {
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.prcd,
+.white {
+  width: 80%;
+  padding: 10px 0;
+  border: none;
+  background: rgb(25, 25, 143);
+  color: white;
+  letter-spacing: 1px;
+  border-radius: 7px;
+  margin-bottom: 10px;
+  box-shadow: 2px 2px 2px rgb(160, 160, 160);
+  cursor: pointer;
+}
+
+.white {
+  background: white;
+  color: black;
+}
+
+.prcd:hover {
+  background: rgb(76, 76, 156);
+}
